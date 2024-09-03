@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://micatesanapi.cavesoft.com.ar',
                         'https://micatesan.cavesoft.com.ar',
-                        'http://127.0.0.1:8000/']
+                        'http://127.0.0.1:8000']
 CORS_ALLOW_ALL_ORIGINS = True 
 CORS_ALLOW_ALL_HEADERS=True
 CORS_ALLOW_CREDENTIALS = True
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
     'back',
